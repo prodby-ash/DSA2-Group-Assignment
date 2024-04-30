@@ -1,14 +1,14 @@
 public class ServerNode {
-    private Object[] data; // Array to store data values
+    private Object[] data; // // Array for data values storage
     private ServerNode[] peripheralNodes; // Array to store references to peripheral nodes
 
-    // Constructor
+   //Constractor
     public ServerNode(int dataSize, int peripheralNodeCount) {
         data = new Object[dataSize]; 
         peripheralNodes = new ServerNode[peripheralNodeCount];
     }
 
-    // Method to set data at a specific index
+   // Method for assigning data to a certain index
     public void setData(int index, Object value) {
         if (index >= 0 && index < data.length) {
             data[index] = value;
@@ -42,7 +42,7 @@ public class ServerNode {
             return peripheralNodes[index];
         } else {
             System.out.println("Invalid index for peripheral node.");
-            return null;
+            return null; 
         }
     }
 
