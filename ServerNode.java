@@ -4,7 +4,7 @@ public class ServerNode {
 
     // Constructor
     public ServerNode(int dataSize, int peripheralNodeCount) {
-        data = new Object[dataSize];
+        data = new Object[dataSize]; 
         peripheralNodes = new ServerNode[peripheralNodeCount];
     }
 
